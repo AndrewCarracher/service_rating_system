@@ -1,9 +1,18 @@
 body{
   text-align: center;
+  background-color: #f142f4;
+  font-family: sans-serif;
+}
+
+#content-wrapper{
+  background-color: #ffffff;
+  margin: 0px 200px;
+  padding: 100px 0px 200px 0px;
 }
 
 #header{
-  margin: 50px 0px;
+  margin: 0px;
+  padding: 0px 0px 50px 0px;
 
 }
 
@@ -15,4 +24,8 @@ body{
 #results{
 
 
+}
+
+.primary{
+  padding: 20px;
 }

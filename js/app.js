@@ -8,7 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   button.addEventListener("click", handleButtonClick);
 })
 
+const radioButtonValue = (rating) => {
+  for (var i=0; i<rating.length; i++)  {
+    if (rating[i].checked)  {
 
+      return rating[i].value;
+    }
+  }
+};
 
 const handleFormSubmit = (event) => {
   event.preventDefault();
@@ -16,7 +23,11 @@ const handleFormSubmit = (event) => {
   const newRating = document.createElement("li");
   result.appendChild(newRating);
 
-  newRating.textContent = `Restaurant Name: ${this.restaurant.value}, Date Attended: ${this.date.value}, Rating Given: ${this.rating.value}, Additional Comments: ${this.comments.value}`;
+  let rating = radioButtonValue(this.rating);
+
+  newRating.textContent = `Restaurant Name: ${this.restaurant.value}, Date Attended: ${this.date.value}, Rating Given: ${rating}, Additional Comments: ${this.comments.value}`;
+
+  console.dir(rating);
 
   document.getElementById('new-item-form').reset();
 };
