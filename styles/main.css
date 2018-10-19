@@ -2,6 +2,7 @@ body{
   text-align: center;
   background-color: #f142f4;
   font-family: sans-serif;
+  color: #f142f4;
 }
 
 #content-wrapper{
@@ -13,7 +14,8 @@ body{
 #header{
   margin: 0px;
   padding: 0px 0px 50px 0px;
-
+  font-size: 32px;
+  font-weight: bolder;
 }
 
 #form{
@@ -28,4 +30,24 @@ body{
 
 .primary{
   padding: 20px;
+}
+
+#restaurant{
+  background-color: #f8a2fa;
+}
+
+#date{
+  background-color: #f8a2fa;
+}
+
+#comments{
+  background-color: #f8a2fa;
+}
+
+#save{
+  background-color: #f8a2fa;
+}
+
+button {
+  background-color: #f8a2fa;
 }

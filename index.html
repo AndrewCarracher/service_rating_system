@@ -18,12 +18,11 @@
           <div class="form-item">
             <label for="restaurant" class="primary">Restaurant Name</label>
             <input type="text" id="restaurant" required/>
-          </div>
+          </div><br>
           <div class="form-item">
-            <label for="date" class="primary">Date of Meal</label>
+            <label for="date" class="primary">Date of Meal  </label>
             <input type="date" id="date" required/>
-          </div>
-          <br>
+          </div><br>
           <div class="form-item">
             <label for="rating" class="primary">How Did You Rate Your Meal</label><br>
             <input type="radio" name="rating" id="rating" value="1"> 1
@@ -31,20 +30,19 @@
             <input type="radio" name="rating" id="rating" value="3"> 3
             <input type="radio" name="rating" id="rating" value="4"> 4
             <input type="radio" name="rating" id="rating" value="5"> 5
-          </div>
-          <br>
+          </div><br>
           <div class="form-item">
             <label for="comments" class="primary">Any Addtional Comments?</label><br>
             <textarea id="comments"  rows="10" cols="30"></textarea>
           </div>
         </div>
-        <input type="submit" value="save"/>
+        <input type="submit" value="save" id="save"/>
       </form>
     </section>
     <section id = "results">
       <h1>Ratings</h1>
       <div id="rating-list"></div>
-      <ul id="rating_display"></ul>
+      <ul id="rating_display"></ul><br>
       <button id="button" type="button">Delete All Items</button>
     </section>
     </div>
