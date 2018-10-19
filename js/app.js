@@ -17,6 +17,15 @@ const radioButtonValue = (rating) => {
   }
 };
 
+const checkValues = (comments) => {
+  if (comments.value === ""){
+    return "";
+  }
+
+  return `, Additional Comments: ${comments.value}`;
+};
+
+
 const handleFormSubmit = (event) => {
   event.preventDefault();
   const result = document.querySelector('#rating_display');
@@ -24,8 +33,9 @@ const handleFormSubmit = (event) => {
   result.appendChild(newRating);
 
   let rating = radioButtonValue(this.rating);
+  let comment = checkValues(this.comments)
 
-  newRating.textContent = `Restaurant Name: ${this.restaurant.value}, Date Attended: ${this.date.value}, Rating Given: ${rating}, Additional Comments: ${this.comments.value}`;
+  newRating.textContent = `Restaurant Name: ${this.restaurant.value}, Date Attended: ${this.date.value}, Rating Given: ${rating}${comment}`;
 
   console.dir(rating);
 

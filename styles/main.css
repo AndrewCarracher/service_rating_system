@@ -51,3 +51,7 @@ body{
 button {
   background-color: #f8a2fa;
 }
+
+li {
+  padding: 20px 0px 15px 0px;
+}
